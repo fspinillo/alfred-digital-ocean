@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>fspinillo.alfredv2.digitalocean</string>
+	<key>connections</key>
+	<dict>
+		<key>910EA327-3EB9-4B8E-8676-2DBE4EB04A21</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>AF4D3E84-02F6-4ED3-A8F9-1EF2EB538918</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+		<key>AF4D3E84-02F6-4ED3-A8F9-1EF2EB538918</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>5AA14F22-6541-488E-BBF5-BF8A5D23962D</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>fspinillo</string>
+	<key>description</key>
+	<string>Quickly grap status of Digital Ocean droplets</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>Digital Ocean status</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>escaping</key>
+				<integer>116</integer>
+				<key>keyword</key>
+				<string>dos</string>
+				<key>runningsubtext</key>
+				<string>Getting status of droplets...</string>
+				<key>script</key>
+				<string>python do_alfred.py</string>
+				<key>subtext</key>
+				<string>Getting status of droplets...</string>
+				<key>title</key>
+				<string>Getting status of droplets...</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>19EA4891-D443-4996-9A90-0CAC3F0F0AB6</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<false/>
+				<key>output</key>
+				<integer>0</integer>
+				<key>removeextension</key>
+				<false/>
+				<key>sticky</key>
+				<false/>
+				<key>text</key>
+				<string>Your DO token has been saved</string>
+				<key>title</key>
+				<string>Saved token</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>5AA14F22-6541-488E-BBF5-BF8A5D23962D</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>keyword</key>
+				<string>dotoken</string>
+				<key>subtext</key>
+				<string>Enter your token and hit ENTER</string>
+				<key>text</key>
+				<string>Set your Digital Ocean tokey</string>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.keyword</string>
+			<key>uid</key>
+			<string>910EA327-3EB9-4B8E-8676-2DBE4EB04A21</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>python do_alfred.py --setkey "{query}"</string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>AF4D3E84-02F6-4ED3-A8F9-1EF2EB538918</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string></string>
+	<key>uidata</key>
+	<dict>
+		<key>19EA4891-D443-4996-9A90-0CAC3F0F0AB6</key>
+		<dict>
+			<key>ypos</key>
+			<real>10</real>
+		</dict>
+		<key>5AA14F22-6541-488E-BBF5-BF8A5D23962D</key>
+		<dict>
+			<key>ypos</key>
+			<real>130</real>
+		</dict>
+		<key>910EA327-3EB9-4B8E-8676-2DBE4EB04A21</key>
+		<dict>
+			<key>ypos</key>
+			<real>130</real>
+		</dict>
+		<key>AF4D3E84-02F6-4ED3-A8F9-1EF2EB538918</key>
+		<dict>
+			<key>ypos</key>
+			<real>130</real>
+		</dict>
+	</dict>
+	<key>webaddress</key>
+	<string>https://github.com/fspinillo/Alfred-Workflows</string>
+</dict>
+</plist>
