@@ -10,7 +10,6 @@ This workflow allows you to interact with your droplets to perform various funct
 * Create snapshots of a droplet
 
 The workflow uses standard Python packages, expcet for Workflow, so no additional requirements needed. Workflow is bundled in the file, and was created by [Dean Jackson (deanishe)](https://github.com/deanishe/alfred-workflow/).
-![alfred-preview](http://i.imgur.com/eXnpsmG.png)
 
 Setup
 ---
@@ -24,22 +23,22 @@ Setup
 
 Using the workflow
 ---
-Status:
+Status:  
 'dos' will return information pertaining to your droplets. You will get back activity status, name, CPUs, RAM, and HDD size. If the droplet is in the middle of a task it will inform you.
 
-Shutdown:
+Shutdown:  
 'dod' will return your available droplets. Select the one you want to shutdown and hit enter.
 
-Reboot:
+Reboot:  
 'dor' will return your available droplets. Select the one you want to reboot and hit enter.
 
-Power-on:
+Power-on:  
 'dopo' will return your available droplets. Select the one you want to power-on and hit enter.
 
-Power-cycle:
+Power-cycle:  
 'dopc' will return your available droplets. Select the one you want to power cycle and hit enter.
 
-Snapshots:
+Snapshots:  
 'sshot' will check to see which droplets are currently off. If a droplet is not off, it will inform you to power it down first. Select a powered down droplet and hit enter to initiate the snapshot. Snapshots are generated based on the name and date. Example: DropletName-YYYY-MM-DD
 
 Todo
