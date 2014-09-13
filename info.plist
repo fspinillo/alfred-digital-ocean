@@ -6,6 +6,30 @@
 	<string>fspinillo.alfredv2.digitalocean</string>
 	<key>connections</key>
 	<dict>
+		<key>19EA4891-D443-4996-9A90-0CAC3F0F0AB6</key>
+		<array/>
+		<key>6FDF60F9-11AA-4F83-936D-084F9166E726</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>FF063008-DD19-4D30-80C2-94B45D8A81BA</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+		<key>77E94400-A221-404E-BBBA-EDBC2BEB0155</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>7E45B79C-0F75-4EDC-869E-5712FAE0AE8A</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
 		<key>910EA327-3EB9-4B8E-8676-2DBE4EB04A21</key>
 		<array>
 			<dict>
@@ -28,6 +52,39 @@
 				<string></string>
 			</dict>
 		</array>
+		<key>D118D066-14F7-4834-B9B0-833318643DB5</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>7EC55790-B6E7-4853-8710-F0B549674B65</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+		<key>D43F6289-32CF-4995-ABC5-0B06CD8C6FC8</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>0DE3D7DD-DA55-46EE-8B55-BAC1F367C1E5</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+		<key>FEB2F034-CB0B-4F37-97E1-E3E5C36096E9</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>4E9FAE7C-49BF-48CA-8EB1-C4A713DB9B3C</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
 	</dict>
 	<key>createdby</key>
 	<string>fspinillo</string>
@@ -42,29 +99,17 @@
 		<dict>
 			<key>config</key>
 			<dict>
-				<key>argumenttype</key>
-				<integer>2</integer>
 				<key>escaping</key>
-				<integer>116</integer>
-				<key>keyword</key>
-				<string>dos</string>
-				<key>runningsubtext</key>
-				<string>Getting status of droplets...</string>
+				<integer>102</integer>
 				<key>script</key>
-				<string>python do_alfred.py</string>
-				<key>subtext</key>
-				<string>Getting status of droplets...</string>
-				<key>title</key>
-				<string>Getting status of droplets...</string>
+				<string>python do_alfred.py --setkey "{query}"</string>
 				<key>type</key>
 				<integer>0</integer>
-				<key>withspace</key>
-				<false/>
 			</dict>
 			<key>type</key>
-			<string>alfred.workflow.input.scriptfilter</string>
+			<string>alfred.workflow.action.script</string>
 			<key>uid</key>
-			<string>19EA4891-D443-4996-9A90-0CAC3F0F0AB6</string>
+			<string>AF4D3E84-02F6-4ED3-A8F9-1EF2EB538918</string>
 			<key>version</key>
 			<integer>0</integer>
 		</dict>
@@ -103,7 +148,7 @@
 				<key>subtext</key>
 				<string>Enter your token and hit ENTER</string>
 				<key>text</key>
-				<string>Set your Digital Ocean tokey</string>
+				<string>Set your Digital Ocean token</string>
 				<key>withspace</key>
 				<true/>
 			</dict>
@@ -117,17 +162,259 @@
 		<dict>
 			<key>config</key>
 			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>escaping</key>
+				<integer>116</integer>
+				<key>keyword</key>
+				<string>dos</string>
+				<key>runningsubtext</key>
+				<string>Getting status of droplets...</string>
+				<key>script</key>
+				<string>python do_alfred.py</string>
+				<key>subtext</key>
+				<string>Getting status of droplets...</string>
+				<key>title</key>
+				<string>Getting status of droplets...</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>19EA4891-D443-4996-9A90-0CAC3F0F0AB6</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>script</key>
-				<string>python do_alfred.py --setkey "{query}"</string>
+				<string>python do_shutdown.py "{query}"</string>
 				<key>type</key>
 				<integer>0</integer>
 			</dict>
 			<key>type</key>
 			<string>alfred.workflow.action.script</string>
 			<key>uid</key>
-			<string>AF4D3E84-02F6-4ED3-A8F9-1EF2EB538918</string>
+			<string>7E45B79C-0F75-4EDC-869E-5712FAE0AE8A</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>escaping</key>
+				<integer>116</integer>
+				<key>keyword</key>
+				<string>dod</string>
+				<key>runningsubtext</key>
+				<string>Loading droplets...</string>
+				<key>script</key>
+				<string>python do_alfred.py</string>
+				<key>subtext</key>
+				<string>Loading droplets...</string>
+				<key>title</key>
+				<string>Choose a droplet to shutdown</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>77E94400-A221-404E-BBBA-EDBC2BEB0155</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>escaping</key>
+				<integer>116</integer>
+				<key>keyword</key>
+				<string>dor</string>
+				<key>runningsubtext</key>
+				<string>Loading droplets...</string>
+				<key>script</key>
+				<string>python do_alfred.py</string>
+				<key>subtext</key>
+				<string>Loading droplets...</string>
+				<key>title</key>
+				<string>Choose a droplet to reboot</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>FEB2F034-CB0B-4F37-97E1-E3E5C36096E9</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>python do_reboot.py "{query}"</string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>4E9FAE7C-49BF-48CA-8EB1-C4A713DB9B3C</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>escaping</key>
+				<integer>116</integer>
+				<key>keyword</key>
+				<string>dopo</string>
+				<key>runningsubtext</key>
+				<string>Loading droplets...</string>
+				<key>script</key>
+				<string>python do_alfred.py</string>
+				<key>subtext</key>
+				<string>Loading droplets...</string>
+				<key>title</key>
+				<string>Choose a droplet to power on</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>6FDF60F9-11AA-4F83-936D-084F9166E726</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>python do_poweron.py "{query}"</string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>FF063008-DD19-4D30-80C2-94B45D8A81BA</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>python do_power_cycle.py "{query}"</string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>0DE3D7DD-DA55-46EE-8B55-BAC1F367C1E5</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>escaping</key>
+				<integer>116</integer>
+				<key>keyword</key>
+				<string>dopc</string>
+				<key>runningsubtext</key>
+				<string>Loading droplets...</string>
+				<key>script</key>
+				<string>python do_alfred.py</string>
+				<key>subtext</key>
+				<string>Loading droplets...</string>
+				<key>title</key>
+				<string>Choose a droplet to power cycle</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>D43F6289-32CF-4995-ABC5-0B06CD8C6FC8</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>2</integer>
+				<key>escaping</key>
+				<integer>116</integer>
+				<key>keyword</key>
+				<string>sshot</string>
+				<key>runningsubtext</key>
+				<string>Loading droplets...</string>
+				<key>script</key>
+				<string>python do_snapshot_check.py</string>
+				<key>subtext</key>
+				<string>Loading droplets...</string>
+				<key>title</key>
+				<string>Choose a droplet to snapshot</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>D118D066-14F7-4834-B9B0-833318643DB5</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>script</key>
+				<string>python do_snapshot.py "{query}"</string>
+				<key>type</key>
+				<integer>0</integer>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.action.script</string>
+			<key>uid</key>
+			<string>7EC55790-B6E7-4853-8710-F0B549674B65</string>
 			<key>version</key>
 			<integer>0</integer>
 		</dict>
@@ -136,25 +423,75 @@
 	<string></string>
 	<key>uidata</key>
 	<dict>
+		<key>0DE3D7DD-DA55-46EE-8B55-BAC1F367C1E5</key>
+		<dict>
+			<key>ypos</key>
+			<real>620</real>
+		</dict>
 		<key>19EA4891-D443-4996-9A90-0CAC3F0F0AB6</key>
 		<dict>
 			<key>ypos</key>
-			<real>10</real>
+			<real>140</real>
+		</dict>
+		<key>4E9FAE7C-49BF-48CA-8EB1-C4A713DB9B3C</key>
+		<dict>
+			<key>ypos</key>
+			<real>380</real>
 		</dict>
 		<key>5AA14F22-6541-488E-BBF5-BF8A5D23962D</key>
 		<dict>
 			<key>ypos</key>
-			<real>130</real>
+			<real>10</real>
+		</dict>
+		<key>6FDF60F9-11AA-4F83-936D-084F9166E726</key>
+		<dict>
+			<key>ypos</key>
+			<real>500</real>
+		</dict>
+		<key>77E94400-A221-404E-BBBA-EDBC2BEB0155</key>
+		<dict>
+			<key>ypos</key>
+			<real>260</real>
+		</dict>
+		<key>7E45B79C-0F75-4EDC-869E-5712FAE0AE8A</key>
+		<dict>
+			<key>ypos</key>
+			<real>260</real>
+		</dict>
+		<key>7EC55790-B6E7-4853-8710-F0B549674B65</key>
+		<dict>
+			<key>ypos</key>
+			<real>740</real>
 		</dict>
 		<key>910EA327-3EB9-4B8E-8676-2DBE4EB04A21</key>
 		<dict>
 			<key>ypos</key>
-			<real>130</real>
+			<real>10</real>
 		</dict>
 		<key>AF4D3E84-02F6-4ED3-A8F9-1EF2EB538918</key>
 		<dict>
 			<key>ypos</key>
-			<real>130</real>
+			<real>10</real>
+		</dict>
+		<key>D118D066-14F7-4834-B9B0-833318643DB5</key>
+		<dict>
+			<key>ypos</key>
+			<real>740</real>
+		</dict>
+		<key>D43F6289-32CF-4995-ABC5-0B06CD8C6FC8</key>
+		<dict>
+			<key>ypos</key>
+			<real>620</real>
+		</dict>
+		<key>FEB2F034-CB0B-4F37-97E1-E3E5C36096E9</key>
+		<dict>
+			<key>ypos</key>
+			<real>380</real>
+		</dict>
+		<key>FF063008-DD19-4D30-80C2-94B45D8A81BA</key>
+		<dict>
+			<key>ypos</key>
+			<real>500</real>
 		</dict>
 	</dict>
 	<key>webaddress</key>
