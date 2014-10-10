@@ -27,16 +27,16 @@ Status:
 'dos' will return information pertaining to your droplets. You will get back activity status, name, CPUs, RAM, and HDD size. If the droplet is in the middle of a task it will inform you.
 
 Shutdown:  
-'dod' will return your available droplets. Select the one you want to shutdown and hit enter.
+After running 'dos', hold down ctrl to pick a droplet to shutdown.
 
 Reboot:  
-'dor' will return your available droplets. Select the one you want to reboot and hit enter.
+After running 'dos', hold down alt to pick a droplet to reboot.
 
 Power-on:  
-'dopo' will return your available droplets. Select the one you want to power-on and hit enter.
+After running 'dos', hold down cmd to pick a droplet to power-on.
 
 Power-cycle:  
-'dopc' will return your available droplets. Select the one you want to power cycle and hit enter.
+After running 'dos', hold down fn to pick a droplet to power-cycle.
 
 Snapshots:  
 'sshot' will check to see which droplets are currently off. If a droplet is not off, it will inform you to power it down first. Select a powered down droplet and hit enter to initiate the snapshot. Snapshots are generated based on the name and date. Example: DropletName-YYYY-MM-DD
