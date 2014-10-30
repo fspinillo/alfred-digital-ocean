@@ -1,4 +1,4 @@
-Digital Ocean's API is still in beta, so this will be evolving as their API access evolves.
+DigitalOcean's API is still in beta, so this will be evolving as their API access evolves.
 
 This workflow allows you to interact with your droplets to perform various functions. Currently you can do the follow:
 
