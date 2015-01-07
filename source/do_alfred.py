@@ -33,8 +33,8 @@ def main(wf):
     header = {'Authorization': 'Bearer ' + api_key + ''}
 
     # gather the data, store the JSON and builds the array
-    r = web.get(url, headers=header)
-    data = r.json()
+    data = web.get(url, headers=header).json()
+
     droplet_array = data['droplets']
 
     # This is a multi-step process for checking on the status
